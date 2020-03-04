@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/susu-lashes/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/susu-lashes/static/js/main.a6c9d560.chunk.js",
-    "main.js.map": "/susu-lashes/static/js/main.a6c9d560.chunk.js.map",
+    "main.js": "/susu-lashes/static/js/main.11a6e85f.chunk.js",
+    "main.js.map": "/susu-lashes/static/js/main.11a6e85f.chunk.js.map",
     "runtime-main.js": "/susu-lashes/static/js/runtime-main.24449f27.js",
     "runtime-main.js.map": "/susu-lashes/static/js/runtime-main.24449f27.js.map",
     "static/js/2.57a21bc1.chunk.js": "/susu-lashes/static/js/2.57a21bc1.chunk.js",
     "static/js/2.57a21bc1.chunk.js.map": "/susu-lashes/static/js/2.57a21bc1.chunk.js.map",
     "index.html": "/susu-lashes/index.html",
-    "precache-manifest.64f31d29bbf08d55c784b6dd1a9ffc3d.js": "/susu-lashes/precache-manifest.64f31d29bbf08d55c784b6dd1a9ffc3d.js",
+    "precache-manifest.6ff185a8b571dfef56dd2282fb00d69c.js": "/susu-lashes/precache-manifest.6ff185a8b571dfef56dd2282fb00d69c.js",
     "service-worker.js": "/susu-lashes/service-worker.js",
     "static/css/main.5ecd60fb.chunk.css.map": "/susu-lashes/static/css/main.5ecd60fb.chunk.css.map",
     "static/js/2.57a21bc1.chunk.js.LICENSE.txt": "/susu-lashes/static/js/2.57a21bc1.chunk.js.LICENSE.txt",
@@ -25,6 +25,6 @@
     "static/js/runtime-main.24449f27.js",
     "static/js/2.57a21bc1.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.a6c9d560.chunk.js"
+    "static/js/main.11a6e85f.chunk.js"
   ]
 }

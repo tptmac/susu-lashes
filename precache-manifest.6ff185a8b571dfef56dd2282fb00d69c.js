@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b29b0c86eb21fa0ac9ecd312f5d00ee3",
+    "revision": "6b3cafaa4af76e6ba941ef601e149927",
     "url": "/susu-lashes/index.html"
   },
   {
-    "revision": "8a32e700b6d8dec668ae",
+    "revision": "4957e5b7cec771216de7",
     "url": "/susu-lashes/static/css/main.5ecd60fb.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/susu-lashes/static/js/2.57a21bc1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8a32e700b6d8dec668ae",
-    "url": "/susu-lashes/static/js/main.a6c9d560.chunk.js"
+    "revision": "4957e5b7cec771216de7",
+    "url": "/susu-lashes/static/js/main.11a6e85f.chunk.js"
   },
   {
     "revision": "8b0d9ccc1cefdb1c595e",
