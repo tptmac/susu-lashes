@@ -36,12 +36,12 @@ const theme = createMuiTheme({
 });
 
 function App() {
-  const [page, setPage] = useState(Page.CONTACT);
+  const [page, setPage] = useState(Page.HOME);
   return (
     <ThemeProvider theme={theme}>
       <Box display="flex" flexDirection="column">
         <Header />
-        <NavBar defaultPage={Page.CONTACT} onChange={(page: Page) => setPage(page)} />
+        <NavBar defaultPage={Page.HOME} onChange={(page: Page) => setPage(page)} />
         {page === Page.HOME &&
           <HomePage />
         }
