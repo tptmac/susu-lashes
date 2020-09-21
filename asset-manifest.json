@@ -1,30 +1,32 @@
 {
   "files": {
-    "main.css": "/susu-lashes/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/susu-lashes/static/js/main.11a6e85f.chunk.js",
-    "main.js.map": "/susu-lashes/static/js/main.11a6e85f.chunk.js.map",
-    "runtime-main.js": "/susu-lashes/static/js/runtime-main.24449f27.js",
-    "runtime-main.js.map": "/susu-lashes/static/js/runtime-main.24449f27.js.map",
-    "static/js/2.57a21bc1.chunk.js": "/susu-lashes/static/js/2.57a21bc1.chunk.js",
-    "static/js/2.57a21bc1.chunk.js.map": "/susu-lashes/static/js/2.57a21bc1.chunk.js.map",
+    "main.css": "/susu-lashes/static/css/main.69eda509.chunk.css",
+    "main.js": "/susu-lashes/static/js/main.7e7bb993.chunk.js",
+    "main.js.map": "/susu-lashes/static/js/main.7e7bb993.chunk.js.map",
+    "runtime-main.js": "/susu-lashes/static/js/runtime-main.55ebe769.js",
+    "runtime-main.js.map": "/susu-lashes/static/js/runtime-main.55ebe769.js.map",
+    "static/css/2.ff72f30d.chunk.css": "/susu-lashes/static/css/2.ff72f30d.chunk.css",
+    "static/js/2.654b40be.chunk.js": "/susu-lashes/static/js/2.654b40be.chunk.js",
+    "static/js/2.654b40be.chunk.js.map": "/susu-lashes/static/js/2.654b40be.chunk.js.map",
     "index.html": "/susu-lashes/index.html",
-    "precache-manifest.6ff185a8b571dfef56dd2282fb00d69c.js": "/susu-lashes/precache-manifest.6ff185a8b571dfef56dd2282fb00d69c.js",
+    "precache-manifest.b5f8be04b1261af362c8c0464909d96c.js": "/susu-lashes/precache-manifest.b5f8be04b1261af362c8c0464909d96c.js",
     "service-worker.js": "/susu-lashes/service-worker.js",
-    "static/css/main.5ecd60fb.chunk.css.map": "/susu-lashes/static/css/main.5ecd60fb.chunk.css.map",
-    "static/js/2.57a21bc1.chunk.js.LICENSE.txt": "/susu-lashes/static/js/2.57a21bc1.chunk.js.LICENSE.txt",
+    "static/css/2.ff72f30d.chunk.css.map": "/susu-lashes/static/css/2.ff72f30d.chunk.css.map",
+    "static/css/main.69eda509.chunk.css.map": "/susu-lashes/static/css/main.69eda509.chunk.css.map",
+    "static/js/2.654b40be.chunk.js.LICENSE.txt": "/susu-lashes/static/js/2.654b40be.chunk.js.LICENSE.txt",
     "static/media/logo.png": "/susu-lashes/static/media/logo.4acef201.png",
-    "static/media/pic1.jpeg": "/susu-lashes/static/media/pic1.2206f1b4.jpeg",
-    "static/media/pic3.jpg": "/susu-lashes/static/media/pic3.fd4f1d17.jpg",
-    "static/media/pic4.jpeg": "/susu-lashes/static/media/pic4.ed064b04.jpeg",
-    "static/media/pic5.jpg": "/susu-lashes/static/media/pic5.faffe0be.jpg",
-    "static/media/pic6.jpg": "/susu-lashes/static/media/pic6.5969d3ac.jpg",
-    "static/media/pic7.png": "/susu-lashes/static/media/pic7.67d04a27.png",
-    "static/media/profile.jpg": "/susu-lashes/static/media/profile.fb8e6bf3.jpg"
+    "static/media/pic1.png": "/susu-lashes/static/media/pic1.4e56aab1.png",
+    "static/media/pic2.png": "/susu-lashes/static/media/pic2.1acb8ae7.png",
+    "static/media/pic3.png": "/susu-lashes/static/media/pic3.d1665911.png",
+    "static/media/pic4.png": "/susu-lashes/static/media/pic4.d6cab4ee.png",
+    "static/media/pic5.png": "/susu-lashes/static/media/pic5.04090225.png",
+    "static/media/slick-theme.css": "/susu-lashes/static/media/slick.f97e3bbf.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.24449f27.js",
-    "static/js/2.57a21bc1.chunk.js",
-    "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.11a6e85f.chunk.js"
+    "static/js/runtime-main.55ebe769.js",
+    "static/css/2.ff72f30d.chunk.css",
+    "static/js/2.654b40be.chunk.js",
+    "static/css/main.69eda509.chunk.css",
+    "static/js/main.7e7bb993.chunk.js"
   ]
 }
