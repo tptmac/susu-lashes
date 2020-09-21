@@ -1,13 +1,18 @@
-import { Box, createMuiTheme, ThemeProvider } from '@material-ui/core';
-import { grey } from '@material-ui/core/colors';
-import React, { useState } from 'react';
+import 'slick-carousel/slick/slick-theme.css';
+import 'slick-carousel/slick/slick.css';
 
+import { Box, createMuiTheme, ThemeProvider } from '@material-ui/core';
+import { grey, pink } from '@material-ui/core/colors';
+import React from 'react';
+
+import { PageType } from './constants';
+import Footer from './footer/Footer';
 import Header from './header/Header';
-import NavBar, { Page } from './navbar/NavBar';
+import NavBar from './navbar/NavBar';
 import AboutPage from './pages/about/AboutPage';
+import CarePage from './pages/care/CarePage';
 import ContactPage from './pages/contact/ContactPage';
 import GalleryPage from './pages/gallery/GalleryPage';
-import HomePage from './pages/home/HomePage';
 import ServicesPage from './pages/services/ServicesPage';
 
 const theme = createMuiTheme({
@@ -17,6 +22,20 @@ const theme = createMuiTheme({
         border: `1px solid ${grey[300]}`,
         boxShadow: 'none'
       }
+    }
+  },
+  palette: {
+    primary: {
+      light: pink[100],
+      main: pink[200],
+      dark: pink[500],
+      contrastText: '#000'
+    },
+    secondary: {
+      light: grey[100],
+      main: grey[200],
+      dark: grey[500],
+      contrastText: '#000'
     }
   },
   typography: {
@@ -30,33 +49,23 @@ const theme = createMuiTheme({
       'sans-serif',
       '"Apple Color Emoji"',
       '"Segoe UI Emoji"',
-      '"Segoe UI Symbol"',
+      '"Segoe UI Symbol"'
     ].join(',')
   }
 });
 
 function App() {
-  const [page, setPage] = useState(Page.HOME);
   return (
     <ThemeProvider theme={theme}>
-      <Box display="flex" flexDirection="column">
+      <Box id={PageType.HOME} display="flex" flexDirection="column">
         <Header />
-        <NavBar defaultPage={Page.HOME} onChange={(page: Page) => setPage(page)} />
-        {page === Page.HOME &&
-          <HomePage />
-        }
-        {page === Page.SERVICES &&
-          <ServicesPage />
-        }
-        {page === Page.GALLERY &&
-          <GalleryPage />
-        }
-        {page === Page.ABOUT &&
-          <AboutPage />
-        }
-        {page === Page.CONTACT &&
-          <ContactPage />
-        }
+        <NavBar />
+        <AboutPage />
+        <ServicesPage />
+        <CarePage />
+        <GalleryPage />
+        <ContactPage />
+        <Footer />
       </Box>
     </ThemeProvider>
   );

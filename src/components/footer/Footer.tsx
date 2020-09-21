@@ -1,43 +1,39 @@
-import { Box, createStyles, IconButton, makeStyles } from '@material-ui/core';
-import { grey, pink } from '@material-ui/core/colors';
+import { Box, createStyles, IconButton, makeStyles, Typography } from '@material-ui/core';
+import { grey } from '@material-ui/core/colors';
 import { Facebook, Instagram, Twitter } from '@material-ui/icons';
 import React from 'react';
-
-import Logo from './assets/logo.png';
-
-const HEIGHT = '20vh';
 
 const useStyles = makeStyles(
   createStyles({
     root: {
-      backgroundImage: `linear-gradient(${grey[50]}, ${pink[50]})`,
-      minHeight: HEIGHT,
+      backgroundColor: grey[800],
       display: 'flex',
-      flexDirection: 'column',
-      justifyContent: 'center',
+      justifyContent: 'space-between',
       alignItems: 'center',
-      padding: '16px'
+      flexDirection: 'row',
+      padding: '8px'
+    },
+    copyright: {
+      color: '#fff'
     },
     socialMedia: {
-      marginTop: '8px',
       display: 'flex',
       flexDirection: 'row'
     },
-    logo: {
-      maxHeight: HEIGHT
-    },
     iconButton: {
-      color: grey[800],
-      margin: '8px'
+      color: grey[50],
+      marginLeft: '8px'
     }
   }),
 );
 
-function Header() {
+function Footer() {
   const classes = useStyles();
   return (
     <Box className={classes.root}>
-      <img src={Logo} alt="Susu Lashes" className={classes.logo} />
+      <Typography variant="body2" className={classes.copyright}>
+        Copyright &copy; {(new Date()).getFullYear()} Susu Lashes
+      </Typography>
       <Box className={classes.socialMedia}>
         <IconButton className={classes.iconButton} aria-label="facebook" size="small" href="https://www.facebook.com/">
           <Facebook fontSize="small" />
@@ -53,4 +49,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Footer;

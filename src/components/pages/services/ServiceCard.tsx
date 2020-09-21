@@ -1,8 +1,9 @@
-import { Button, Card, Divider, Typography } from '@material-ui/core';
-import { grey, pink } from '@material-ui/core/colors';
+import { Card, Divider, Typography } from '@material-ui/core';
 import { map as _map } from 'lodash';
 import React from 'react';
 import styled from 'styled-components';
+
+import SubmitButton from '../common/SubmitButton';
 
 interface PriceItem {
   name: string;
@@ -19,15 +20,6 @@ interface ServiceCardProps {
 const Section = styled.div`
   margin: 16px;
   text-align: center;
-`;
-
-const BookNowButton = styled(Button)`
-  background-color: ${grey[900]};
-  color: white;
-  :hover {
-    background-color: ${pink[200]};
-    border-color: ${pink[200]};
-  }
 `;
 
 function ServiceCard(props: ServiceCardProps) {
@@ -52,7 +44,7 @@ function ServiceCard(props: ServiceCardProps) {
       </Section>
       <Divider />
       <Section>
-        <BookNowButton variant="outlined">Book Now</BookNowButton>
+        <SubmitButton text="Book Now" />
       </Section>
     </Card>
   );

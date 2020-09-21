@@ -1,37 +1,29 @@
-import { Button, Grid, TextField } from '@material-ui/core';
-import { grey, pink } from '@material-ui/core/colors';
+import { Grid, TextField } from '@material-ui/core';
 import React from 'react';
-import styled from 'styled-components';
 
-const SubmitButton = styled(Button)`
-  background-color: ${grey[900]};
-  color: white;
-  :hover {
-    background-color: ${pink[200]};
-    border-color: ${pink[200]};
-  }
-`;
+import SubmitButton from '../common/SubmitButton';
 
 function EmailForm() {
   return (
-    <Grid container direction="column" spacing={4} style={{ paddingTop: '8px' }}>
+    <Grid container direction="column" spacing={2}>
       <Grid item>
-        <Grid container spacing={4}>
-          <Grid item xs={6}>
-            <TextField variant="outlined" label="First name" fullWidth required />
+        <Grid container spacing={2}>
+          <Grid item sm={6} xs={12}>
+            <TextField label="First name" variant="outlined" size="small" fullWidth required />
           </Grid>
-          <Grid item xs={6}>
-            <TextField variant="outlined" label="Last name" fullWidth required />
+          <Grid item sm={6} xs={12}>
+            <TextField label="Last name" variant="outlined" size="small" fullWidth required />
           </Grid>
         </Grid>
       </Grid>
       <Grid item>
-        <TextField variant="outlined" label="Email address" fullWidth required />
+        <TextField label="Email address" variant="outlined" size="small" fullWidth required />
       </Grid>
       <Grid item>
         <TextField
-          variant="outlined"
           label="Message"
+          variant="outlined"
+          size="small"
           rows="8"
           multiline
           fullWidth
@@ -39,7 +31,7 @@ function EmailForm() {
         />
       </Grid>
       <Grid item style={{ textAlign: 'right' }}>
-        <SubmitButton variant="outlined" fullWidth>Submit</SubmitButton>
+        <SubmitButton fullWidth />
       </Grid>
     </Grid>
   );
