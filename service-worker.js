@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/susu-lashes/precache-manifest.b5f8be04b1261af362c8c0464909d96c.js"
+  "/susu-lashes/precache-manifest.c530c0099e6f3f1dcc697161a12404b1.js"
 );
 
 self.addEventListener('message', (event) => {

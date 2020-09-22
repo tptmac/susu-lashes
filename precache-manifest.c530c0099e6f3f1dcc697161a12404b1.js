@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fff285dba76ad95542040001c35e8bb1",
+    "revision": "1395b4948a3e2d6f71c0fe773bd965bc",
     "url": "/susu-lashes/index.html"
   },
   {
-    "revision": "ee2615457eed9abde849",
+    "revision": "b2193ef8dac06490c0f1",
     "url": "/susu-lashes/static/css/2.ff72f30d.chunk.css"
   },
   {
-    "revision": "a3883bc0788762747d37",
+    "revision": "ea83b9162f64e5cc0cd2",
     "url": "/susu-lashes/static/css/main.69eda509.chunk.css"
   },
   {
-    "revision": "ee2615457eed9abde849",
-    "url": "/susu-lashes/static/js/2.654b40be.chunk.js"
+    "revision": "b2193ef8dac06490c0f1",
+    "url": "/susu-lashes/static/js/2.2b2004d1.chunk.js"
   },
   {
     "revision": "e3cddcc14d0b349b4e6eccba623e55ae",
-    "url": "/susu-lashes/static/js/2.654b40be.chunk.js.LICENSE.txt"
+    "url": "/susu-lashes/static/js/2.2b2004d1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a3883bc0788762747d37",
-    "url": "/susu-lashes/static/js/main.7e7bb993.chunk.js"
+    "revision": "ea83b9162f64e5cc0cd2",
+    "url": "/susu-lashes/static/js/main.cc2347ef.chunk.js"
   },
   {
     "revision": "4d86e19ba7df931f8bfd",
