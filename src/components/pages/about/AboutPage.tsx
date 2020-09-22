@@ -2,15 +2,11 @@ import { Grid, Typography } from '@material-ui/core';
 import React from 'react';
 
 import Page from '../common/Page';
-import ProfilePic from './assets/profile.jpg';
 
 function AboutPage() {
   return (
     <Page>
       <Grid container direction="row" justify="center" spacing={4}>
-        {/* <Grid item sm={2} xs={12}>
-          <img src={ProfilePic} width="100%" style={{ borderRadius: '10px' }} />
-        </Grid> */}
         <Grid item sm={12} xs={12}>
           <Typography variant="h4" align="center" style={{ margin: '0px 0px 32px' }}>
             **NEW COVID-19 POLICIES**

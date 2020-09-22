@@ -22,6 +22,11 @@ const theme = createMuiTheme({
         border: `1px solid ${grey[300]}`,
         boxShadow: 'none'
       }
+    },
+    MuiDrawer: {
+      paper: {
+        width: '60%'
+      }
     }
   },
   palette: {

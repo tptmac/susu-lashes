@@ -34,8 +34,8 @@ function GalleryPage() {
         pauseOnHover
         cssEase="linear"
       >
-        {_map(IMAGES, (image) => (
-          <img src={image} />
+        {_map(IMAGES, (image: string, index: number) => (
+          <img key={`gallery-img-${index}`} src={image} alt="" />
         ))}
       </Slider>
     </Page>

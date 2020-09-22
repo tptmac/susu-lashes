@@ -1,11 +1,23 @@
-import { AppBar, Box, Container, createStyles, makeStyles, Typography, Button, SwipeableDrawer, List, ListItem, ListItemIcon, ListItemText } from '@material-ui/core';
+import {
+  Box,
+  Button,
+  Container,
+  createStyles,
+  IconButton,
+  List,
+  ListItem,
+  makeStyles,
+  SwipeableDrawer,
+  Typography
+} from '@material-ui/core';
 import { grey, pink } from '@material-ui/core/colors';
+import { Close, Menu } from '@material-ui/icons';
 import { map as _map, size as _size } from 'lodash';
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
-import { Menu, Mail, Inbox, ArrowDownward } from '@material-ui/icons';
 
 import { isMobileWindow, PageType } from '../constants';
+
 
 const HEIGHT = 50;
 
@@ -52,8 +64,17 @@ const useStyles = makeStyles(
       color: '#fff',
       justifyContent: 'space-between'
     },
+    mobileNavItemButton: {
+      borderBottom: `1px dashed ${pink[200]}`
+    },
     hidden: {
       visibility: 'hidden'
+    },
+    fullWidth: {
+      width: '100%'
+    },
+    closeButton: {
+      padding: '16px 16px 0'
     }
   }),
 );
@@ -70,7 +91,7 @@ function NavBar() {
     };
     window.addEventListener('resize', handleResize)
   });
-
+  
   const onNavButtonClick = (type: PageType) => {
     setActive(type);
   }
@@ -99,27 +120,32 @@ function NavBar() {
           endIcon={<Menu className={classes.hidden} />} 
           fullWidth
         >
-          {active}
+          Susu Lashes
         </Button>
         <SwipeableDrawer 
           anchor="left" 
           open={isDrawerOpen} 
           onClose={toggleDrawer(false)} 
           onOpen={toggleDrawer(true)}
+          transitionDuration={500}
         >
+          <Box display='flex' justifyContent='flex-end'>
+            <IconButton onClick={toggleDrawer(false)} className={classes.closeButton}>
+              <Close />
+            </IconButton>
+          </Box>
           <List>
-            {_map(Object.values(PageType), (type, index) => (
-              <ListItem button key={type}>
+            {_map(Object.values(PageType), (type: PageType) => (
+              <ListItem key={type}>
                 <Link  
                   key={`nav-${type}`} 
-                  className={type === active ? classes.activeNav : classes.inactiveNav}
                   to={type}
                   offset={-HEIGHT}
-                  onSetActive={() => onNavButtonClick(type)}
+                  onClick={() => onNavButtonClick(type)}
+                  className={classes.fullWidth}
                   smooth
-                  spy
                 >
-                  <Typography variant="button">
+                  <Typography variant="button" className={classes.mobileNavItemButton}>
                     {type}
                   </Typography>
                 </Link>
@@ -130,7 +156,7 @@ function NavBar() {
       </div>
     );
   } else {
-    navBar = _map(Object.values(PageType), (type, index) => {
+    navBar = _map(Object.values(PageType), (type: PageType, index: number) => {
       const elements = [(
         <Link  
           key={`nav-${type}`} 
